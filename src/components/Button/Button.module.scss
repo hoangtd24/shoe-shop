@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    animation: fadeIn 0.75s linear;
+    &:hover{
+        box-shadow: -2px 2px 4px rgb(0 0 0 / 15%);
+    }
 }
 
 .disable{
@@ -35,4 +39,13 @@
 
 .outline{
     background-color: #eee;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }

@@ -1,11 +1,8 @@
 .cart-item{
     display: flex;
     padding: 20px 0;
-    animation: bounceOut;
-    animation-duration: 2s;
-}
-.cart-item + .cart-item{
-    margin-top: 40px;
+    animation: backInRight 0.5s linear,zoomOut 0.5s linear;
+
 }
 
 .wrapper-img{
@@ -96,5 +93,29 @@
     &:hover{
         background-color: #f8d43f;
         box-shadow: -2px 2px 4px rgb(0 0 0 / 15%);
+    }
+}
+
+@keyframes backInRight{
+    from{
+        transform: translateX(360px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to
+    {
+        transform: translateX(0.2);
+        opacity: 0;
     }
 }

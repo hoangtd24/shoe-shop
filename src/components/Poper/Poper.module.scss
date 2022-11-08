@@ -48,3 +48,21 @@
     overflow-y: scroll;
     flex: 1;
 }
+
+.no-cart{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--black-color);
+    position: relative;
+    margin-top: 14px;
+}
+
+@media (max-width: 576px){
+    
+.wrapper + .wrapper{
+    margin-left: unset;
+}
+.wrapper{
+    margin: 12px 0;
+}
+}
