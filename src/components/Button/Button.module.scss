@@ -1,0 +1,38 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.disable{
+    pointer-events: none;
+    user-select: none;
+    cursor: default;
+}
+
+.large{
+    width: 46px;
+    height: 46px;
+
+    & > img{
+        width: 20px;
+        color: varr(--black-color);
+    }
+}
+
+.small{
+    width: 28px;
+    height: 28px;
+    & > img{
+        width: 10px;
+    }
+}
+
+.primary{
+    background-color: var(--yelow-color);
+}
+
+.outline{
+    background-color: #eee;
+}
